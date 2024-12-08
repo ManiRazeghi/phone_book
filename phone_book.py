@@ -4,6 +4,7 @@ class PhoneBook:
 
     def __init__(self, data: dict) -> None:
         self.data = data
+
     
     @line_controller
     def option_show(self, line_number: int) -> dict:
@@ -19,6 +20,11 @@ class PhoneBook:
             number += 1
         
         return data
+
+     def filter_numbers(self, starts_with: str) -> dict:
+         pass
+
+    
     
 
 
