@@ -1,5 +1,7 @@
 from functools import wraps
 
+print('welcome to decorator!')
+
 def line_controller(func):
     @wraps(func)
     def inner(*args):
