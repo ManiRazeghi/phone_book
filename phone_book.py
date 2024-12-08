@@ -21,7 +21,6 @@ class PhoneBook:
         return data
     
 
-obj = PhoneBook({'ali': '12', 'mani': '20', 'reza': '56'})
-print(obj.option_show(100))
+
     
 
