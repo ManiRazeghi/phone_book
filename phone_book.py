@@ -21,8 +21,17 @@ class PhoneBook:
         
         return data
 
-     def filter_numbers(self, starts_with: str) -> dict:
-         pass
+
+    def filter_numbers(self, starts_with: str) -> dict:
+         
+        data = {}
+
+        for key in self.data.keys():
+            if self.data.get(key).startswith(starts_with):
+                data[key] = self.data.get(key)
+        
+        return data
+         
 
     
     
