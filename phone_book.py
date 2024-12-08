@@ -31,6 +31,14 @@ class PhoneBook:
                 data[key] = self.data.get(key)
         
         return data
+
+
+    def show_name(self, phone_number: str) -> str:
+        for name in self.data.keys():
+            if self.data.get(name) == phone_number:
+                return name
+
+        return f'Not Found name of {phone_number}'
          
 
     
